@@ -1,0 +1,34 @@
+{
+  "name": "nuage-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "server:dev": "nodemon --exec \"webpack --config server/webpack.server.dev.js && yarn server:run\"",
+    "server:build": "webpack --config server/webpack.server.prod.js",
+    "server:test": "",
+    "server:run": "node ./server/dist/server.js",
+    "client:dev": "",
+    "client:build": "",
+    "client:test": ""
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-typescript": "^7.3.3",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.1",
+    "jest": "^24.1.0",
+    "nodemon": "^1.18.10",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-merge": "^4.2.1"
+  }
+}
